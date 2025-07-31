@@ -1,0 +1,14 @@
+name: myfirstworkflow
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+         - name: Welcome message
+           run: echo "Welcome to my Git"
+         - name: print date
+           run: echo "$date"
+         - name: list all the files
+           run: ls
